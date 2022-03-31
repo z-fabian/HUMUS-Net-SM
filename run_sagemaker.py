@@ -66,7 +66,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--job_name", default=None)
-    parser.add_argument("--image_uri", default="sagemaker-tutorial")
+    parser.add_argument("--image_uri", default="humusnet-container")
     parser.add_argument("--role", default="arn:aws:iam::000000000000:role/dummy")
     parser.add_argument("--input_path", default="file://.cache")
     parser.add_argument("--output_path", default="file://output")

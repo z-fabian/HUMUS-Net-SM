@@ -3,7 +3,7 @@
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 REGION=$(aws configure get region)
 
-IMAGE_NAME=sagemaker-tutorial
+IMAGE_NAME=hmusnet-container
 IMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com/${IMAGE_NAME}:latest"
 
 aws ecr describe-repositories --repository-names "${IMAGE_NAME}" > /dev/null 2>&1

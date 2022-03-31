@@ -1,6 +1,6 @@
 #!/bin/bash --login
 
-conda activate sagemaker-tutorial
+conda activate humusnet-env
 export PYTHONPATH=.
 
 $@
